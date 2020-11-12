@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="{{ STATIC_URL }}/static/style.css">
 	<meta charset="UTF-8">
 	<title>Архив статей</title>
 </head>
-<body>
+<body class="archive">
 	<div class="header">
 		<img src="{{ STATIC_URL }}/static/logo.png">
 	</div>
 	<div class="archive">
 		{% for post in posts %}
 			<div class="one-post">
-			<h2 class="post-title">{{ post.title }}</h2>
+				<a href="../article/{{ post.id }}"><h2 class="post-title">{{ post.title }}</h2></a>
 			<div class="article-info">
 				<div class="article-author">{{ post.author.username }}</div>
 				<div class="article-created-date">{{ post.created_date }}</div>

@@ -11,7 +11,9 @@ body {
     margin-right: auto;
 }
 
-.archive {
+.archive,
+.one-post,
+.header {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -39,8 +41,16 @@ a {
     color: white;
 }
 
+.content,
+.registration,
+.auth {
+    align: center;
+}
+
 .content input,
-.content textarea {
+.registration input,
+.content textarea,
+.auth input {
     display: block;
     border: 8px solid white;
     border-radius: 5px;
@@ -55,4 +65,21 @@ a {
 .content .post-text {
     width: 246px;
     height: 200px;
+}
+
+.registration input,
+.auth input {
+    display: block;
+    margin: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.header .menu,
+.header .auth {
+    display: block;
+    margin-left: 850px;
 }

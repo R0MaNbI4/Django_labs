@@ -7,10 +7,16 @@
 </head>
 <body class="article">
 	<div class="header">
+		<a class="menu" href="../registration">
+			<p>Регистрация</p>
+		</a>
+		<a class="menu" href="../auth">
+			<p>Авторизация</p>
+		</a>
+		<a class="menu" href="../../archive">
+			<p>Все статьи</p>
+		</a>
 		<img src="{{ STATIC_URL }}/static/logo.png">
-		<div class="article-all">
-			<a href="../../archive"><p>Все статьи</p></a>
-		</div>
 	</div>
 	<div class="one-post">
 		<h2 class="post-title">{{ post.title }}</h2>
